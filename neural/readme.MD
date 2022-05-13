@@ -6,6 +6,7 @@
 
 
 
-## Trello:
 
- [Trello board](https://trello.com/b/qG4ddrXx/product-backlog-f2m4bo)
+## Trello: ["https://trello.com/b/qG4ddrXx/product-backlog-f2m4bo"]
+
+- [database ontwerp](doc/database.md)
