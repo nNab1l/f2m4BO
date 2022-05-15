@@ -9,6 +9,10 @@ body{
     font-size: 1rem;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h4{
     position: relative;
     width: 2px;
@@ -48,7 +52,7 @@ h4{
 }
 
 .learnmore:hover{
-    background: #E06467;
+    background: rgb(76, 120, 252);
     transition: 0.5s;
 }
 
