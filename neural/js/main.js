@@ -8,5 +8,8 @@ const body = document.getElementById("js--body");
 button.onclick = function() {
     navigation.style.visibility = "visible";
     navigation.style.opacity = 1;
+    button.style.visibility = "hidden";
 }
+
+
 
