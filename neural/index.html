@@ -13,7 +13,7 @@
 <body id="js--body">
     <header class="header">
         <img class="logo1" src="img/neaural.png" alt="">
-        <input list="products1" id="placeholder" type="text" placeholder="search for a product">
+        <input class="searchbar" list="products1" id="placeholder" type="text" placeholder="search for a product">
         <datalist id="products1">
             <option value="spot">
             <option value="mavic 2">
@@ -34,26 +34,27 @@
                 <a href="#products">Products</a>
              </li>
              <li class="mainNavigationListItem">
-                <a href="">what we do</a>
+                <a href="">What we do</a>
              </li>
              <li class="mainNavigationListItem">
-                <a href="#contact">contact</a>
+                <a href="#contact">Contact</a>
              </li>  
         </ul>
     </nav>
     <main>
         <figure class="bigFigure">
             <img src="img/spot.jpg" alt="verschillende Shinto gates achter elkaar bij de Fox Shrine in Kyoto, Japan.">
-            <h2 class="logo">improving life with <br> robotics</h2>
-            <button class="learnmore">learn more</button>
+            <h2 class="logo">Improving life with <br> robotics</h2>
+            <button class="learnmore">Learn More</button>
             <h4></h4>
         </figure>
         <section class="info">
             <div class="block">
                 <h2 class="infoTitle">What we do</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Reprehenderit cumque quaerat eligendi nulla quos. Excepturi totam error <br> obcaecati voluptatum ratione asperiores quisquam voluptate, <br> et non quod eligendi. Laudantium, consectetur neque.
-            Atque voluptatum perferendis sunt animi? <br>  Facere nisi amet saepe quam. Voluptatem iusto, praesentium ipsa, iste atque <br> voluptatibus architecto magnam aperiam molestias eligendi ipsum iure. A fuga architecto iure quam fugit!</p>
-            <button class="buy">learn more</button>
+            <p>Our main purpose is to better the quality of life <br> by harnessing the power of robotics. We believe in a world where human life<br> will be guided by robotics, but we would like to achieve this in a way <br> that is both safe and beneficial to our planet
+             <br> this essentially means that we will be working towards a bright future <br> With the help of robotics and technology</p>
+             <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat soluta, similique excepturi, voluptatum aperiam veniam perferendis blanditiis saepe placeat magni dolore ea error ab odio fuga tempore. Id, adipisci sit!</p>
+            <button id="buy1" class="buy">Learn More</button>
 
             
 
@@ -63,34 +64,48 @@
            
         </section>
         <section id="products" class="collections">
+            <section class="inputs">
+                <h2>filter</h2>
+                <div>
+                    <input class="input2" id="checkbox-robot" type="checkbox" class="filter">
+                    <label for="checkbox-robot" class="label">Robot</label>
+                </div>
+                <div>
+                    <input class="input2" id="checkbox-drone" type="checkbox" class="filter">
+                    <label for="checkbox-drone" class="label">Drone</label>
+                </div>
+                <div>
+                    <input class="input2" id="checkbox-sensor" type="checkbox" class="filter">
+                    <label for="checkbox-sensor" class="label">Sensor</label>
+                </div>    
             <h2 class="collectionsTitle">products</h2>
             <ul class="collectionsList">
-                <li class="collectionsListItem">
+                <li class="collectionsListItem" data-category="robot">
                     <img src="img/spot.jpg" alt="de recent uitgebrachte robotische hond spot">
                     <h2 class="item">Spot</h2>
                     <p class="desc">Newest product</p>
                 </li>
-                <li class="collectionsListItem">
+                <li class="collectionsListItem" data-category="drone">
                     <img src="img/mavic2.png" alt="een high-end drone genaamd de mavic 2">
                     <h2 class="item">Mavic 2</h2>
                     <p class="desc">Flying made easy</p>
                 </li>
-                <li class="collectionsListItem">
-                    <img src="img/oso.webp" alt="een robotische camera genaamd de oso">
+                <li class="collectionsListItem" data-category="sensor">
+                    <img src="img/oso.webp" alt="een robotische camera genaamd de OS0">
                     <h2 class="item">OS0 digital lidar sensor</h2>
                     <p class="desc">see everything, anytime</p>
                 </li>
-                <li class="collectionsListItem">
-                    <img src="img/ultimaker3.jpg" alt="een nieuwe geavanceerde 3d printer">
+                <li class="collectionsListItem" data-category="robot">
+                    <img src="img/ultimaker3.jpg" alt="een nieuwe geavanceerde 3d printer genaamd de ultimaker3">
                     <h2 class="item">ultimaker3</h2>
                     <p class="desc">3D printing with ease</p>
                 </li>
-                <li class="collectionsListItem">
+                <li class="collectionsListItem" data-category="robot">
                     <img src="img/stretch.jpg" alt="een nieuwe industriële robot genaamd stretch">
                     <h2 class="item">Stretch</h2>
                     <p class="desc">picking and placing your items</p>
                 </li>
-                <li class="collectionsListItem">
+                <li class="collectionsListItem" data-category="robot">
                     <img src="img/spot arm.png" alt="de arm van de robotische hond spot">
                     <h2 class="item">Spot arm</h2>
                     <p class="desc">discover new options with spot's new arm</p>
@@ -101,19 +116,35 @@
             
             <ul class="reviews">
                 <li class="review">
-                    <p>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolor impedit facere, laboriosam beatae esse eos iure suscipit ducimus a praesentium officia vitae saepe itaque aperiam odio reiciendis assumenda sit?</p>
+                    <p>The ultimaker3 has been a great asset to our business as it has helped us create accurate prototypes for our customers.</p>
                 </li>
                 <li class="review">
-                    <p>2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolor impedit facere, laboriosam beatae esse eos iure suscipit ducimus a praesentium officia vitae saepe itaque aperiam odio reiciendis assumenda sit?</p>
+                    <p>Spot is one of our best assets yet. He can do heavy lifting for us while also being mobile. He also comes with a remote, and developer options.</p>
                 </li>
                 <li class="review">
-                    <p>3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolor impedit facere, laboriosam beatae esse eos iure suscipit ducimus a praesentium officia vitae saepe itaque aperiam odio reiciendis assumenda sit?</p>
+                    <p>Stretch can do work for us that no human can do, it is a very benficial step to our business, and we can wholeheartedly recommend him.</p>
                 </li>
-                <li class="review">
+               
+               
+               
     </main>
     <footer id="contact" class="footer">
-        
-       
+        <form>
+            <h2>Get in touch with us!</h2>
+            <div>
+                <label for="Naam">Name</label>
+                <input id="Naam" type="text">
+            </div>
+            <div>
+            <label for="email">Email</label>
+            <input id="email" type="email">
+            </div>
+            <div>
+            <label for="vraag">Question</label>
+            <textarea id="vraag" class="bigText"></textarea>
+            </div>
+            <input id="send" class="submit" type="submit" value="Send">
+        </form>
     </footer>
     
     
