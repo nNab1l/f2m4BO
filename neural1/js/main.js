@@ -131,22 +131,6 @@ closeBlueModal.onclick = function(){
 }
 
 
-const bots = document.getElementById("collectionsListItem")
-
-searchbar.onkeyup = function(event){
-    if(event.keyCode === 13){
-        let searchTerm = searchbar.value.toUpperCase().split(" ").join("");
-        for(let i = 0; i < bots.length; i++){
-            if(bots[i].dataset.title.search(searchTerm) === -1){
-                window.location.href = "http://localhost/neural/details.php?id=1";
-            }
-            else{
-                bots[i].style.opacity = 1;
-            }
-        }
-    }
-}
-
 
 
 

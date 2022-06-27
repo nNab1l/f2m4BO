@@ -23,6 +23,8 @@
             <option value="spot arm"></option>
           </datalist>
         <button id="js--menu" class="headerButton">≡</button>
+
+        
       
     </header>
     <nav id="js--nav" class="mainNavigation">
@@ -34,7 +36,7 @@
                 <a href="#products">Products</a>
              </li>
              <li class="mainNavigationListItem">
-                <a href="">What we do</a>
+                <a href="#what">What we do</a>
              </li>
              <li class="mainNavigationListItem">
                 <a href="#contact">Contact</a>
@@ -49,12 +51,13 @@
             <h4></h4>
         </figure>
         <section class="info">
-            <div class="block">
+            <div id="what" class="block">
                 <h2 class="infoTitle">What we do</h2>
             <p>Our main purpose is to better the quality of life <br> by harnessing the power of robotics. We believe in a world where human life<br> will be guided by robotics, but we would like to achieve this in a way <br> that is both safe and beneficial to our planet
              <br> this essentially means that we will be working towards a bright future <br> With the help of robotics and technology</p>
-             <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat soluta, similique excepturi, voluptatum aperiam veniam perferendis blanditiis saepe placeat magni dolore ea error ab odio fuga tempore. Id, adipisci sit!</p>
+             <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Fugiat soluta, similique excepturi, voluptatum aperiam veniam <br> perferendis blanditiis saepe placeat magni dolore ea error <br> ab odio fuga tempore. Id, adipisci sit!</p>
             <button id="buy1" class="buy">Learn More</button>
+            <button id="buy2" class="buy1">Learn less</button>
 
             
 
@@ -93,7 +96,7 @@
                 <li class="collectionsListItem" data-category="sensor">
                     <img src="img/oso.webp" alt="een robotische camera genaamd de OS0">
                     <h2 class="item">OS0 digital lidar sensor</h2>
-                    <p class="desc">see everything, anytime</p>
+                    <p class="desc">See everything, anytime</p>
                 </li>
                 <li class="collectionsListItem" data-category="robot">
                     <img src="img/ultimaker3.jpg" alt="een nieuwe geavanceerde 3d printer genaamd de ultimaker3">
@@ -103,17 +106,44 @@
                 <li class="collectionsListItem" data-category="robot">
                     <img src="img/stretch.jpg" alt="een nieuwe industriële robot genaamd stretch">
                     <h2 class="item">Stretch</h2>
-                    <p class="desc">picking and placing your items</p>
+                    <p class="desc">Picking and placing your items</p>
                 </li>
                 <li class="collectionsListItem" data-category="robot">
-                    <img src="img/spot arm.png" alt="de arm van de robotische hond spot">
+                    <img src="img/spot-arm.png" alt="de arm van de robotische hond spot">
                     <h2 class="item">Spot arm</h2>
-                    <p class="desc">discover new options with spot's new arm</p>
+                    <p class="desc">Discover new options with spot's new arm</p>
                 </li>
             </ul>
+            <article id="js--blueModal" class="modal">
+                <figure class="modal__figure">
+                    <img src="/img/mavic2.png" alt="Spot zij aanzicht" class="modal__image">
+                </figure>
+                <section class="modal__section">
+                    <h2 class="modal__heading">spot</h2>
+                    <p class="modal__text">
+                        Maak kennis met spot: een nieuwe geavanceerde, en intelligente robot
+                        die overal heen kan.
+                    </p>
+        
+                    <p class="modal__text">de robot is van boston dynamics, en komt een afstandsbediening, maar
+                        het kan ook autonoom bewegen. 
+                    </p>
+                    <p class="modal__text">het heeft een geavanceerde camera die alles scherp kan vastleggen en zijn omgeving kan scannen</p>
+                    <p class="modal__text">de knoppenlayout van de afstandsbediening is zeer comfortabel, en gemakkelijk te leren</p>
+                    <a href="/index.html" class="modal__link">terug naar producten</a>
+                </section>
+                <button id="js--closeBlue" class="modal__button">x</button>
+            </article>
+            <article id="js--blue" class="product product--lightblue">
+                <figure class="product__figure product__figure--lightblue">
+                    <img src="img/robot-spot.webp" alt="" class="product__image">
+                </figure>
+                <section class="product__section product__section--lightblue">
+                   <a href="details.html">info</a>
+                </section>
+            </article>
         </section>
         <section class="section section--third">
-            
             <ul class="reviews">
                 <li class="review">
                     <p>The ultimaker3 has been a great asset to our business as it has helped us create accurate prototypes for our customers.</p>
@@ -122,13 +152,16 @@
                     <p>Spot is one of our best assets yet. He can do heavy lifting for us while also being mobile. He also comes with a remote, and developer options.</p>
                 </li>
                 <li class="review">
-                    <p>Stretch can do work for us that no human can do, it is a very benficial step to our business, and we can wholeheartedly recommend him.</p>
+                    <p>Stretch can do work for us that no human can do, it is a very benificial step to our business, and we can wholeheartedly recommend him.</p>
                 </li>
+            </ul>
+        </section>
                
                
                
     </main>
     <footer id="contact" class="footer">
+
         <form>
             <h2>Get in touch with us!</h2>
             <div>
@@ -145,6 +178,7 @@
             </div>
             <input id="send" class="submit" type="submit" value="Send">
         </form>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2420.4892390042455!2d5.1070148155817225!3d52.65114023425479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c8a8936fe0db6b%3A0x3af534d1cba40772!2sBreitnerhof%2C%20Hoorn!5e0!3m2!1snl!2snl!4v1655110320987!5m2!1snl!2snl" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
     
     

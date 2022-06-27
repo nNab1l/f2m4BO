@@ -32,8 +32,6 @@ h4{
 
 .searchbar{
     border-radius: 2rem;
-    width: 16rem;
-    height: 2rem;
 }
 
 
@@ -229,64 +227,6 @@ input:focus{
     color: white;
 }
 
-
-.inputs{
-    margin-bottom: 3rem;
-}
-
-
-.p-back{
-    color: rgb(76, 120, 252);
-    font-size: 2rem;
-}
-
-
-.filter-text{
-    color: rgb(76, 120, 252);
-    font-size: 2.5rem;
-}
-
-
-.thanks-h2{
-    padding-left: 3.5rem;
-    color: rgb(76, 120, 252);
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-}
-
-.thanks-h1{
-    padding-left: 3.5rem;
-    color: rgb(76, 120, 252);
-    margin-top: 2rem;
-}
-
-.back{
-    padding-left: 3.5rem;
-    color: rgb(76, 120, 252);
-    margin-top: 2rem;
-    text-decoration: none;
-}
-
-
-
-.prijs{
-    position: relative;
-    top: -7rem;
-    left: 1rem;
-    color: white;
-    font-size: 1rem;
-}
-
-.koop{
-    position: relative;
-    top: -4rem;
-    left: 25rem;
-    color: white;
-    background: rgb(76, 120, 252);;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-
 .item:hover{
     visibility: visible;
     transition: 0.5s;
@@ -306,15 +246,6 @@ input:focus{
     font-weight: 400;
     margin-bottom: 3.125rem;
     margin-top: 3rem;
-}
-
-.collectionsTitle1{
-    font-size: 350%;
-    color: rgb(76, 120, 252);
-    text-transform: uppercase;
-    font-weight: 400;
-    margin-bottom: -5rem;
-    margin-top: 10rem;
 }
 
 .collectionsList{
@@ -340,21 +271,11 @@ input:focus{
 }
 
 .modal{
-    width: 90vw;
+    width: 80vw;
     height: auto;
-    display: flex;
-    margin-top: 5rem;
-    justify-content: center;
-    margin-left: 3rem;
-}
-
-.modal2{
-    width: 90vw;
-    height: auto;
-    display: flex;
-    margin-top: 5rem;
-    justify-content: center;
-    margin-left: -4rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
 }
 
 
@@ -368,8 +289,18 @@ input:focus{
     background: var(--switch-color-blue);
 }
 
+.modal__figure--pink{
+    background: var(--switch-color-pink);
+}
 
 
+.modal__figure--gray{
+    background: var(--switch-color-gray);
+}
+
+.modal__figure--yellow{
+    background: var(--switch-color-yellow);
+}
 
 .product__button{
     position: relative;
@@ -404,17 +335,14 @@ input:focus{
     text-transform: uppercase;
     font-weight: 500;
     font-size: 200%;
-    border-bottom: 0.2rem solid rgb(76, 120, 252);
-    color: rgb(76, 120, 252);
-    margin-top: 1.5rem;
+    border-bottom: 0.5rem solid var(--switch-color-blue);
 }
 
 
 
 .modal__text{
-    font-size: 150%;
+    font-size: 100%;
     font-weight: 400;
-    line-height: 3rem;
 }
 
 .modal__link{
@@ -516,15 +444,6 @@ input:focus{
         flex-wrap: wrap;
         width: 100%;
     }
-    .headerButton{
-        display: flex;
-    }
-
-    .searchbar{
-        position: absolute;
-        right: 6rem;
-        width: 7rem;
-    }
 
     .review{
         width: 100%;
@@ -612,37 +531,6 @@ input:focus{
     color: rgb(76, 120, 252);
 }
 
-.buy-now{
-    display: block;
-    height: 3rem;
-    width: 15rem;
-    border: none;
-    background: rgb(76, 120, 252);
-    color: white;
-    font-size: 1.5rem;
-}
-
-
-.buy-now1{
-    display: block;
-    height: 3rem;
-    width: 15rem;
-    border: none;
-    background: rgb(76, 120, 252);
-    color: white;
-    font-size: 1.5rem;
-    position: relative;
-    top: -6rem;
-    left: 12rem;
-    color: white;
-    background: rgb(76, 120, 252);;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-
-
-
-
 
 .review:hover{
     border-bottom: 1rem solid rgb(76, 120, 252);
@@ -653,23 +541,17 @@ input:focus{
 
 
 form{
-    background: white;
+    width: 25rem;
+    height: 23rem;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
     padding: 1rem;
     font-size: 1rem;
     gap: 1rem;
     color: rgb(76, 120, 252);
-}
-
-
-.form1{
-    background: white;
-    padding: 1rem;
-    font-size: 1rem;
-    gap: 1rem;
-    color: rgb(76, 120, 252);
-    position: absolute;
-    top: 25%;
-    left: 35%;
+    margin-bottom: 3rem;
 }
 form label{
     border-bottom: 2px solid white;
@@ -702,17 +584,6 @@ input{
 textarea{
     height: 5.3ch;
     width: 100%;
-    font-size: 1.6rem;
-    border: 1px solid black;
-    font-family: sans-serif;
-    padding: 1rem 2rem;
-    resize: none;
-    background: #EEEEEE;
-}
-
-.bigtext{
-    height: 5.3ch;
-    width: 25ch;
     font-size: 1.6rem;
     border: 1px solid black;
     font-family: sans-serif;
